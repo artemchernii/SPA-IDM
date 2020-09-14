@@ -1,0 +1,268 @@
+@import "vars"
+
+
+/*==========  Desktop First  ==========*/
+
+// ≥1200px
++media-breakpoint-down(lg)
+	.usecase
+		margin-top: 200px
+		&_name
+			top: -10%
+		&_bg
+			top: -50%
+			width: 950px
+	.learnmore
+		&_title
+			font-size: 46px
+// ≥992px
++media-breakpoint-down(md)
+	#header 
+		height: 60px
+		padding: 10px 0
+	
+
+	#header .logo h1 
+		font-size: 28px
+		padding: 8px 0
+	.intro
+		&_image
+			img
+				width: 90px
+		&_title
+			font-size: 50px
+		&_description
+			margin-top: 70px
+			&__title
+				font-size: 30px
+			&__text
+				font-size: 19px
+	.dashboard
+		margin-bottom: 200px
+	.benefits
+		&_image
+			left: -50%
+		&_block
+			&__title
+				font-size: 22px
+			&__list
+				&-item
+					font-size: 19px
+	.usecase
+		margin-top: 100px
+		&_name
+			top: -10%
+		&_bg
+			width: 800px
+			right: -55%
+			top: -55%
+		&_block
+			&__btns
+			&__btn
+				padding: 15px 20px
+				margin: 0px 10px
+				box-shadow: 0 9px 15px rgba(0,0,0,0.30), 0 5px 9px rgba(0,0,0,0.22)
+	.learnmore
+		&_title
+			font-size: 40px
+	.form_control
+		font-size: 18px
+		&__label
+			font-size: 18px
+	.contactos
+		padding: 100px 0
+		&_name
+			top: 10%
+		&_info
+			&__title
+				font-size: 18px
+			&__address
+				font-size: 16px
+			&__tel
+				font-size: 16px
+		&_emails
+			margin-top: 0
+		&_socials
+			&__title
+				text-align: right
+			&__links
+				text-align: right
+				&-item
+					font-size: 30px
+					margin: 0px 10px
+// ≥768px
++media-breakpoint-down(sm)
+	.cookies
+		font-size: 13px
+		&_p
+			padding: 0px 5px
+			line-height: 1.2
+		&_button
+			font-size: 12px
+	.back-to-top 
+		bottom: 15px
+	
+	.intro
+		margin-top: 10px
+		margin-bottom: 90px
+		&_title
+			font-size: 42px
+		&_subtitle
+			padding: 0px 10px
+		&_description
+			&__title
+				font-size: 28px
+			&__text
+				font-size: 16px
+		&_name
+			top: 110%
+		&_form
+			margin-top: 30px
+			position: relative
+			&-thx
+				position: absolute
+			button
+				margin-top: 10px
+					
+	.dashboard
+		margin-bottom: 130px
+		&_signon
+			&__block
+				&-top
+					padding: 10px 20px
+
+	.benefits
+		margin-bottom: 0
+		margin-top: 0
+		&_image
+			left: -100%
+		&_block
+			padding: 0px 30px
+			&__title
+				font-size: 20px
+				text-align: center
+			&__list
+				&-item
+					font-size: 16px
+					&:before
+						color: $aqua
+	.characteristics
+		&_title
+			font-size: 32px
+			padding: 0px 10px
+		&_box
+			padding: 0px 10px
+			margin-top: 10px
+			margin-bottom: 30px
+			&__image
+				img
+					width: 50%
+			&__text
+				&:before
+					color: $aqua
+			&__2
+				margin-top: 0
+			&__3
+				margin-top: 0
+			&__4
+				margin-top: 0
+			&__5
+				margin-top: 0
+	.chr_form
+		button
+			margin-top: 10px
+	.form
+		button
+			margin-top: 10px
+	.usecase
+		&_title
+			font-size: 32px
+		&_block
+			&_btns
+				text-align: center
+			&__btn
+				margin: 0px auto
+				margin-bottom: 10px
+				width: 50%
+				display: block
+				font-size: 16px
+			&__share
+				&-btn
+					display: flex
+					align-items: center
+					justify-content: center
+					text-align: center
+					min-width: 100px
+					padding: 10px
+					font-size: 13px
+					i
+						padding: 3px 5px
+		&_image
+			iframe
+				height: 300px
+	.learnmore
+		&_title
+			font-size: 28px
+	.form_control
+		font-size: 16px
+		&__label
+			margin-bottom: 0
+			text-align: left
+	.contactForm
+		margin-top: 30px
+		padding: 0px 20px
+	.assign
+		padding: 0px 20px
+	.contactos
+		padding: 80px 0
+		margin-bottom: 0
+		&_mails
+			margin-bottom: 10px
+		&_logo
+			margin: 10px 0
+		&_socials
+			margin-top: 10px
+			&__links
+				&-item
+					margin: 0px 5px
+					font-size: 24px
+		&_privacy
+			text-align: center
+// ≥576px
++media-breakpoint-down(xs)
+	.contactos
+		text-align: center
+		&_socials
+			&__title
+				text-align: center
+			&__links
+				text-align: center
+	.mobile-nav-toggle
+		right: 0
+	.usecase
+		&_name
+			top: -15%
+		&_bg
+			width: 700px
+		&_block
+			&_btns
+				text-align: center
+			&__btn
+				margin: 0px auto
+				margin-bottom: 15px
+				width: 70%
+				display: block
+				font-size: 16px
+/*==========  Mobile First  ==========*/
+
+// ≤576px
++media-breakpoint-up(sm)
+
+// ≤768px
++media-breakpoint-up(md)
+
+// ≤992px
++media-breakpoint-up(lg)
+
+// ≤1200px
++media-breakpoint-up(xl)

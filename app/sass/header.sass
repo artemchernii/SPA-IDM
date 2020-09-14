@@ -1,0 +1,98 @@
+@import "_vars.sass"
+	
+#header
+  height: 80px
+  transition: all 0.5s
+  z-index: 997
+  transition: all 0.5s
+  padding: 20px 0
+  background: $bg
+  font-family: Roboto, sans-serif
+  font-weight: 200
+//   box-shadow: 0px 2px 5px rgba(127, 137, 161, 0.3)
+  &.header-scrolled, &.header-pages
+    height: 60px
+    padding: 10px 0
+  .logo
+    h1
+      font-size: 36px
+      margin: 0
+      padding: 0
+      line-height: 1
+      font-weight: 400
+      letter-spacing: 3px
+      text-transform: uppercase
+      a
+        color: #00366f
+        text-decoration: none
+        &:hover
+          color: #00366f
+          text-decoration: none
+    img
+      padding: 10px
+      margin: 7px 0
+      max-height: 35px
+
+
+#header
+	&.header-scrolled
+		box-shadow: 0px 2px 5px rgba(127, 137, 161, 0.3)
+#header-logo
+	// display: none
+	a
+		display: flex
+		align-items: center
+		text-decoration: none
+		span
+			margin-left: 5px
+			font-size: 20px
+			color: $dark
+
+.main-pages
+  margin-top: 60px
+
+.back-to-top
+  position: fixed
+  display: none
+  background: $prpl
+  color: $aqua
+  width: 55px
+  height: 55px
+  text-align: center
+  line-height: 1
+  font-size: 16px
+  border-radius: 50%
+  left: 35px
+  bottom: 35px
+  transition: background 0.5s
+  z-index: 99
+  box-shadow: 0px 2px 5px rgba(127, 137, 161, 0.3)
+  box-shadow: 0px 2px 5px rgba($dark, 0.3)
+  i
+    padding-top: 12px
+    color: $purple
+  img
+    margin-top: 16px
+    width: 40%
+
+.back-to-top
+	i
+		font-size: 40px
+
+.mobile-nav
+	a
+		transition: all .25s ease
+		margin-top: 10px
+		text-align: center
+		font-weight: 700
+		&:hover
+			color: $aqua !important
+			padding: 10px 20px !important
+
+.mobile-nav .active>a, .mobile-nav li:hover>a
+	color: $aqua !important
+	padding: 10px 20px !important
+
+.mobile-nav-toggle
+	&:hover
+		transform: scale(1.3)

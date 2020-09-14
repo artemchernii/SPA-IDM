@@ -1,0 +1,88 @@
+@import "_vars.sass"
+.dashboard
+	&_image
+		margin-top: 50px
+		img
+			width: 100%
+	&_img
+		opacity: 0
+		display: none
+		border-radius: 2px
+		&-active
+			// display: block
+			// opacity: 1
+			animation: imgactive .8s ease forwards
+			opacity: 1
+			display: block
+	&_signon
+		border-radius: 15px
+		box-shadow: 1px 2px 5px rgba(0, 0, 0, 0.12), 1px 4px 11px rgba(0, 0, 0, 0.24)
+		&__block
+			border-bottom: .5px solid #cccccc
+			&-top
+				display: flex
+				justify-content: space-between
+				align-items: center
+				margin: 10px 0
+				padding: 20px 40px
+				&:hover
+					cursor: pointer
+				&_title
+					font-family: Roboto, sans-serif
+					font-weight: 200
+					font-size: 20px
+				&_arrow
+					transition: all .5s ease
+					img
+						width: 18px
+			&-content
+				display: none
+				padding: 15px 40px
+				padding-top: 0
+				margin-bottom: 10px
+				font-family: Roboto, sans-serif
+				font-weight: 200
+				font-size: 14px
+				transition: all .5s ease
+
+@keyframes imgactive
+	0%
+		opacity: 0
+		display: none
+		transform: translateY(-30px)
+	100%
+		opacity: 1
+		display: block
+		transform: translateY(0)
+
+.arrow_active
+	img
+		animation: arrow_active .5s ease forwards
+@keyframes arrow_active
+	0%
+		transform: rotate(0deg)
+	100%
+		transform: rotate(180deg)
+
+.content_active
+	animation: content_active .5s ease forwards
+	display: block
+
+@keyframes content_active
+	0%
+		opacity: 0
+		display: none
+		padding-top: 0
+	100%
+		opacity: 1
+		display: block
+		padding-top: 15px
+
+.slick-dots li button:before
+	color: $dark
+	font-size: 40px
+.slick-dots li button:focus:before, .slick-dots li button:hover:before
+	color: $blue
+
+.slick-dots li.slick-active button:before
+	color: $aqua

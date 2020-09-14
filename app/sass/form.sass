@@ -1,0 +1,109 @@
+@import "_vars.sass"
+
+
+.form
+	// margin-top: 30px
+	text-align: center
+	input
+		margin-right: 10px
+		background: #fff
+		font-family: Roboto, sans-serif
+		font-weight: 200
+		color: $dark
+		min-width: 350px
+		border-radius: 30px
+		padding: 15px 40px
+		border: none
+	button
+		background: $btn
+		color: $white
+		font-family: Roboto, sans-serif
+		font-weight: 200
+		padding: 15px 30px
+		border-radius: 30px
+		border: none
+		transition: all .25s ease
+		outline: none
+		&:hover
+			cursor: pointer
+			background: lighten($btn, 5)
+			outline: none
+	&_thx
+		color: $prpl
+		letter-spacing: 1px
+		font-size: 32px
+		margin-bottom: 10px
+		font-family: Roboto, sans-serif
+		font-weight: 200
+		filter: blur(3px)
+		transition: all 1s ease
+		opacity: 0
+		&-active
+			animation: thxblur 1s ease forwards
+		&-hide
+			animation: hidethx 1s ease forwards
+		&__prpl
+			color: $white
+
+
+@keyframes hidethx
+	0%
+		filter: blur(0px)
+		opacity: 1
+	100%
+		filter: blur(3px)
+		opacity: 0
+
+
+
+.form-row-chr
+	display: block
+	.assign-chr
+		width: 60%
+		color: lighten($prpl, 30)
+
+
+.dload-btn-chr
+	// display: flex
+	// margin: 20px auto 
+	position: relative
+	left: 50%
+	transform: translateX(-50%)
+	margin-top: 92px
+	background: $btn
+	color: $white
+	font-family: Roboto, sans-serif
+	font-weight: 200
+	padding: 15px 30px
+	border-radius: 30px
+	border: none
+	transition: all .25s ease
+	outline: none
+	&:hover
+		cursor: pointer
+		background: lighten($btn, 5)
+		outline: none
+	&:focus
+		outline: none
+.chr_form
+	opacity: 0
+	display: none
+	margin-top: 0
+	&-thx
+		color: $prpl
+		letter-spacing: 1px
+		margin-bottom: 10px
+		text-align: center
+		&-h3
+			font-family: Roboto, sans-serif
+			font-weight: 200
+			filter: blur(3px)
+			transition: all 1s ease
+			opacity: 0
+			&-active
+				animation: thxblur 1s ease forwards
+
+.chr_form-active
+	animation: introform .8s ease forwards
+	opacity: 1
+	display: block

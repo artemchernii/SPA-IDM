@@ -1,0 +1,72 @@
+@import "vars"
+@import "fonts"
+@import "libs"
+@import "preloader.sass"
+@import "cookies.sass"
+@import "navigation.sass"
+@import "header.sass"
+@import "form.sass"
+@import "contacts.sass"
+@import "intro.sass"
+@import "dashboard.sass"
+@import "benefits.sass"
+@import "characteristics.sass"
+@import "usecase.sass"
+@import "learnmore.sass"
+@import "privacy.sass"
+@import "footer.sass"
+
+
+
+
+::placeholder
+	color: $black
+
+::selection
+	background-color: $accent
+	color: $white
+
+body
+	font-size: 16px
+	min-width: 320px
+	position: relative
+	line-height: 1.65
+	font-family: $roboto
+	overflow-x: hidden
+	color: $dark
+	background: $bg
+	input, textarea
+		border: #666 1px solid
+		outline: none
+		&:focus:required:invalid
+			border-color: red
+		&:required:valid
+			border-color: green
+
+.img-responsive
+	display: block
+	max-width: 100%
+	height: auto
+	&.img-width
+		width: 100%
+main
+	margin-top: 100px
+	overflow-x: hidden
+
+.text-center
+	text-align: center
+
+b, strong
+	font-weight: bold
+
+
+
+
+
+
+
+
+
+
+
+@import "media"
