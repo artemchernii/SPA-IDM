@@ -2,7 +2,7 @@
 
 ### [Live Site](https://products.pdmfc.com/spa/eng)
 
-![COVID-19 Tracker](https://i.ibb.co/3yFvyWD/Screenshot-at-Sep-14-23-39-24.png)
+![Screenshot-at-Sep-14-23-39-24.png](https://i.ibb.co/3yFvyWD/Screenshot-at-Sep-14-23-39-24.png)
 
 ## Introduction
 
