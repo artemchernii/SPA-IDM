@@ -1,4 +1,4 @@
-# SPA-IDM-
+# SPA-IDM
 
 ### [Live Site](https://products.pdmfc.com/spa/eng)
 
